@@ -23,7 +23,6 @@
 {
     UIView * view = tap.view;
     [view removeFromSuperview];
-    [view removeAllSubviews];
     [view removeGestureRecognizer:tap];
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstCouponBoard_iPhone"];
 }
@@ -39,7 +38,7 @@
         }else{
         
             self.hidden = YES;
-//            [self removeFromSuperview];
+            [self removeFromSuperview];
         }
     }
     return self;

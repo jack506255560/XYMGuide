@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "XYMGuide/*"
+  s.source_files  = "XYMGuide/*.{h,m}"
   # s.exclude_files = "XYMGuide/XYMGuide/*"
 
   # s.public_header_files = "Classes/**/*.h"
