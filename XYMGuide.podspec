@@ -17,15 +17,15 @@ Pod::Spec.new do |s|
 
   s.name         = "XYMGuide"
   s.version      = "0.0.1"
-  s.summary      = “A simple novice guide view”
+  s.summary      = "A simple novice guide view"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  # s.description  = <<-DESC
+  #                DESC
 
   s.homepage     = "https://github.com/jack506255560/XYMGuide.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -63,8 +63,8 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  s.platform     = :ios, “8.0”
+  s.platform     = :ios
+  # s.platform     = :ios, “7.0”
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/jack506255560/XYMGuide.git", :tag => “0.0.1” }
+  s.source = { :git => "https://github.com/jack506255560/XYMGuide.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +90,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "XYMGuide", "Classes/**/*.{h,m}"
-  # s.exclude_files = "Classes/Exclude"
+  s.source_files  = "XYMGuide/*"
+  # s.exclude_files = "XYMGuide/XYMGuide/*"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -116,7 +116,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+  s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"

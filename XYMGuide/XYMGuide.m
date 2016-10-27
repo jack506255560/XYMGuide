@@ -39,7 +39,7 @@
         }else{
         
             self.hidden = YES;
-            [self removeFromSuperview];
+//            [self removeFromSuperview];
         }
     }
     return self;
